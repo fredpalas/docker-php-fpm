@@ -20,7 +20,7 @@ For example, if you need to install or remove php extensions, edit the Dockerfil
 
 	git clone git@github.com:fredpalas/docker-php-fpm.git
 	cd ./docker-php-fpm
-	docker build --rm -t camil/php-fpm .
+	docker build --rm -t fredpalas/php-fpm .
 
 ## Usage
 
