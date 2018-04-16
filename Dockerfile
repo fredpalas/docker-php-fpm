@@ -13,9 +13,8 @@ RUN requirements="libmcrypt-dev g++ libicu-dev libmcrypt4 libicu52 zlib1g-dev gi
     && docker-php-ext-install gd \
     && docker-php-ext-install bz2 \
     && pecl install apcu \ 
-    && docker-php-ext-enable apcu \
-    && requirementsToRemove="libmcrypt-dev g++ libicu-dev zlib1g-dev" \
-    && apt-get purge --auto-remove -y $requirementsToRemove \
+    && docker-php-ext-enable apcu \    
+    && apt-get purge --auto-remove -y libmcrypt-dev g++ libicu-dev zlib1g-dev \
     && rm -rf /var/lib/apt/lists/*
 
 #install composer globally
