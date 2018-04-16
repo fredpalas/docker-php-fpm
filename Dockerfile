@@ -1,4 +1,4 @@
-FROM php:7-fpm
+FROM php:7.1-fpm-jessie
 MAINTAINER Adrian Pasten <fredpalas@apperturedev.es>
 
 #install laravel requirements and aditional extensions
