@@ -1,4 +1,4 @@
-FROM php:7.1-fpm-jessie
+FROM php:7.2-fpm-jessie
 LABEL maintainer="Adrian Pasten <fredpalas@apperturedev.es>"
 
 #install laravel requirements and aditional extensions
